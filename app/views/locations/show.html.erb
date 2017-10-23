@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @location.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @location.city %>
+</p>
+
+<p>
+  <strong>Postcode:</strong>
+  <%= @location.postcode %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @location.country %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @location.user %>
+</p>
+
+<iframe src = "https://maps.google.com/maps?q=<%= @location.latitude %>,<%= @location.longitude %>&hl=es;z=14&amp;output=embed"></iframe>
+
+<p>
+  <strong>latitude:</strong>
+  <%= @location.latitude %>
+</p>
+<p>
+  <strong>longituded:</strong>
+  <%= @location.longituded %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'Back', locations_path %>
